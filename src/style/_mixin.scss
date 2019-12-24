@@ -1,0 +1,19 @@
+@mixin breakpoint($bp) {
+  @if $bp == $xs-min or $bp == $sm-min or $bp == $md-min or $bp == $lg-min or $bp == $xl-min {
+    @media only screen and (min-width: $bp) {
+      @content;
+    }
+  }
+
+  @else if $bp == $xs-max or $bp == $sm-max or $bp == $md-max or $bp == $lg-max {
+    @media only screen and (max-width: $bp) {
+      @content;
+    }
+  }
+}
+
+@mixin breakpoint-range($min, $max) {
+  @media only screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}

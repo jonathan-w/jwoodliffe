@@ -1,0 +1,16 @@
+// Colours
+
+$desktop-green:   #007d7a;
+
+// Breakpoints
+// LG and below is considered mobile and gets hamburgler menu etc.
+$xs-min:       0;
+$sm-min:       576px;
+$md-min:       768px;
+$lg-min:       992px;
+$xl-min:       1200px;
+
+$xs-max:       $sm-min - 1;
+$sm-max:       $md-min - 1;
+$md-max:       $lg-min - 1;
+$lg-max:       $xl-min - 1;
