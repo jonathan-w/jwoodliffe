@@ -1,5 +1,5 @@
 <template>
-  <div class="taskbar">
+  <div class="taskbar bg-control">
     START
   </div>
 </template>
@@ -8,14 +8,21 @@
 import Vue from 'vue';
 
 export default Vue.extend({
-  name: 'HelloWorld',
-  props: {
-    msg: String,
+  name: 'Taskbar',
+  data() {
+    return {
+      open: false,
+    };
   },
 });
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+  .taskbar {
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
 </style>

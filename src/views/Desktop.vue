@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="bg-desktop absolute left-0 top-0 w-full h-full">
     <Taskbar />
   </div>
 </template>
@@ -14,3 +14,9 @@ export default {
   },
 };
 </script>
+
+<style scoped lang="scss">
+  .desktop {
+    left: 0;
+  }
+</style>
