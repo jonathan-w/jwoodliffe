@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+// Custom fonts
+@import
+  "@/assets/fonts/stylesheet";
+
 // Import config files
 @import
   "_variables",

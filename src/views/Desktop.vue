@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .desktop {
-    left: 0;
+  * {
+    font-family: 'MS Sans Serif';
   }
 </style>
