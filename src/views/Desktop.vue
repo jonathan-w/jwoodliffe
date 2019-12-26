@@ -15,8 +15,12 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
   * {
     font-family: 'MS Sans Serif';
   }
+  img {
+    image-rendering: pixelated;
+  }
+
 </style>

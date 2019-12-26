@@ -1,6 +1,8 @@
 <template>
-  <div class="taskbar bg-control">
-    START
+  <div class="taskbar absolute bottom-0 left-0 w-full bg-control">
+    <button>
+      <img :src="startIcon" />
+    </button>
   </div>
 </template>
 
@@ -12,6 +14,7 @@ export default Vue.extend({
   data() {
     return {
       open: false,
+      startIcon: './img/start.png',
     };
   },
 });
@@ -20,9 +23,5 @@ export default Vue.extend({
 <style scoped lang="scss">
   .taskbar {
     height: 40px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
   }
 </style>
